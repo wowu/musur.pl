@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const IndexPage = () => (
   <div>
@@ -12,11 +12,11 @@ const IndexPage = () => (
 
     <ul>
       <li>
-        <a href="http://biegiempozdrowie.pl">Biegiem Po Zdrowie</a> - Strona projektu Biegiem Po Zdrowie. Powstała przy współpracy z <a href="http://flatpixels.pl">flatpixels</a>.
+        <OutboundLink href="http://biegiempozdrowie.pl">Biegiem Po Zdrowie</OutboundLink> - Strona projektu Biegiem Po Zdrowie. Powstała przy współpracy z <a href="http://flatpixels.pl">flatpixels</a>.
       </li>
 
       <li>
-        <a href="http://gorskiebieganie.pl">Stowarzyszenie Biegów Górskich</a> - Znajdziesz tam informacje o biegach organizowanych przez stowarzyszenie.
+        <OutboundLink href="http://gorskiebieganie.pl">Stowarzyszenie Biegów Górskich</OutboundLink> - Znajdziesz tam informacje o biegach organizowanych przez stowarzyszenie.
       </li>
       
     </ul>
@@ -25,11 +25,11 @@ const IndexPage = () => (
 
     <ul>
       <li>
-        <a href="https://crmrkt.com/pMgdJA">Seattle</a> - Szablon blogowy do WordPressa. Powstał przy współpracy z <a href="http//flatpixels.pl">flatpixels</a>.
+        <OutboundLink href="https://crmrkt.com/pMgdJA">Seattle</OutboundLink> - Szablon blogowy do WordPressa. Powstał przy współpracy z <a href="http//flatpixels.pl">flatpixels</a>.
       </li>
 
       <li>
-        <a href="http://january.musur.pl/">January Blue</a> - Szablon do WordPressa przeznaczony dla magazynów i większych blogów.
+        <OutboundLink href="http://january.musur.pl/">January Blue</OutboundLink> - Szablon do WordPressa przeznaczony dla magazynów i większych blogów.
       </li>
     </ul>
 
@@ -37,10 +37,10 @@ const IndexPage = () => (
 
     <ul>
       <li>
-        <a href="https://t.me/ctdwnbot">Countdown</a> (@ctdwnbot) - Bot do Telegrama pozwalający na odliczanie czasu do wybranych dat.
+        <OutboundLink href="https://t.me/ctdwnbot">Countdown</OutboundLink> (@ctdwnbot) - Bot do Telegrama pozwalający na odliczanie czasu do wybranych dat.
       </li>
       <li>
-        <a href="https://t.me/send_me_later_bot">SendMeLater</a> (@send_me_later_bot) - Szybki sposób na tworzenie przypomnień używając Telegrama.
+        <OutboundLink href="https://t.me/send_me_later_bot">SendMeLater</OutboundLink> (@send_me_later_bot) - Szybki sposób na tworzenie przypomnień używając Telegrama.
       </li>
     </ul>
 
@@ -55,10 +55,10 @@ const IndexPage = () => (
     <h2>Kontakt</h2>
 
     <p>
-      Telegram: <a href="https://t.me/pankarol">@pankarol</a><br />
-      Twitter: <a href="https://twitter.com/PanKarol_">@pankarol_</a><br />
-      GitHub: <a href="https://github.com/wowu">wowu</a><br />
-      Mail: <a href="mailto:karol@musur.pl">karol@musur.pl</a>
+      Telegram: <OutboundLink href="https://t.me/pankarol">@pankarol</OutboundLink><br />
+      Twitter: <OutboundLink href="https://twitter.com/PanKarol_">@pankarol_</OutboundLink><br />
+      GitHub: <OutboundLink href="https://github.com/wowu">wowu</OutboundLink><br />
+      Mail: <OutboundLink href="mailto:karol@musur.pl">karol@musur.pl</OutboundLink>
     </p>
     
   </div>
