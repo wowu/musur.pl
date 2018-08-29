@@ -1,26 +1,26 @@
-import React from 'react'
 import PropTypes from 'prop-types'
+import React from 'react'
 import Helmet from 'react-helmet'
 
-import Header from '../components/header'
-
-// import 'normalize.css'
-
-const Layout = ({ children, data }) => (
+const Layout = ({ children, data, location, lang }) => (
   <div>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: 'Krótko i treściwie.' },
-        { name: 'keywords', content: 'strony internetowe, boty, aplikacje, Karol Musur' },
+        {
+          name: 'keywords',
+          content: 'strony internetowe, boty, aplikacje, Karol Musur',
+        },
       ]}
     />
-    {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-    <div style={{
-      maxWidth: '42rem',
-      margin: '0 auto',
-      padding: '1.5rem 1.125rem'
-    }}>
+    <div
+      style={{
+        maxWidth: '42rem',
+        margin: '0 auto',
+        padding: '1.5rem 1.125rem',
+      }}
+    >
       {children()}
     </div>
   </div>
@@ -32,7 +32,7 @@ Layout.propTypes = {
 
 export default Layout
 
-export const query = graphql`
+export const pageQuery = graphql`
   query SiteTitleQuery {
     site {
       siteMetadata {

@@ -1,0 +1,36 @@
+#send_me_later_icon {
+  width: 150px;
+  height: 150px;
+}
+
+#envelope {
+  animation: levitate 2s 0s infinite ease-in-out alternate;
+}
+
+#background {
+  animation: levitate 2s 0.2s infinite ease-in-out alternate;
+}
+
+@keyframes pulse {
+  0%,
+  5% {
+    opacity: 0;
+    transform: translate(40px, -40px);
+  }
+
+  20%,
+  80% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes levitate {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0, 20px);
+  }
+}

@@ -4,6 +4,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    `gatsby-plugin-sass`,
     {
       resolve: 'gatsby-plugin-typography',
       options: {
@@ -13,7 +14,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: "./src/favicon.png",
+        logo: './src/favicon.png',
         injectHTML: true,
         icons: {
           android: true,
@@ -24,14 +25,14 @@ module.exports = {
           firefox: true,
           twitter: false,
           yandex: false,
-          windows: false
-        }
-      }
+          windows: false,
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-52766080-3",
+        trackingId: 'UA-52766080-3',
         // Puts tracking script in the head instead of the body
         head: false,
         // Setting this parameter is optional
@@ -39,7 +40,23 @@ module.exports = {
         // Setting this parameter is also optional
         respectDNT: true,
         // Avoids sending pageview hits from custom paths
-        exclude: ["/preview/**"],
+        exclude: ['/preview/**'],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-i18n',
+      options: {
+        langKeyDefault: 'pl',
+        langKeyForNull: 'pl',
+        useLangKeyLayout: true,
+      },
+    },
+    {
+      resolve: '@jacobmischka/gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/,
+        },
       },
     },
   ],

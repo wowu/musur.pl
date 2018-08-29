@@ -1,33 +1,25 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import LanguageSwitcher from './languageSwitcher'
+import PropTypes from 'prop-types'
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+const Header = ({ lang, home, location }) => (
+  <div>
+    {!home && (
+      <span>
+        <Link to={`/${lang}/`}>⟵ Home</Link>
+        <div style={{ display: 'inline-block', margin: '0 8px' }}>&bull;</div>
+      </span>
+    )}
+
+    <LanguageSwitcher location={location} />
   </div>
 )
+
+Header.propTypes = {
+  location: PropTypes.object.isRequired,
+  lang: PropTypes.string.isRequired,
+  home: PropTypes.bool,
+}
 
 export default Header
