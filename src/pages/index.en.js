@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import Helmet from 'react-helmet'
 
 import Header from '../components/header'
 
@@ -8,6 +9,11 @@ import ExternalOutboundLink from '../components/ExternalOutboundLink'
 
 const IndexPage = props => (
   <div>
+    <Helmet>
+      <link rel="alternate" hreflang="en" href="/en" />
+      <link rel="alternate" hreflang="pl" href="/pl" />
+    </Helmet>
+
     <Header home={true} lang="en" location={props.location} />
 
     <h1>Karol Musur</h1>
@@ -15,24 +21,19 @@ const IndexPage = props => (
 
     <h2>Projects</h2>
 
-    <h4>Websites</h4>
+    <h4>Telegram Bots</h4>
 
     <ul>
       <li>
-        <ExternalOutboundLink href="http://biegiempozdrowie.pl">
-          Biegiem Po Zdrowie (pl)
+        <ExternalOutboundLink href="https://t.me/ctdwnbot">
+          Countdown
         </ExternalOutboundLink>{' '}
-        - "Running For Health" project website. Allows user to find a running
-        event in their city. Created in cooperation with{' '}
-        <a href="http://flatpixels.pl">flatpixels</a>.
+        (@ctdwnbot) - Telegram bot that countds time to selected events.
       </li>
-
       <li>
-        <ExternalOutboundLink href="http://gorskiebieganie.pl">
-          Stowarzyszenie Biegów Górskich (pl)
-        </ExternalOutboundLink>{' '}
-        - Website of "Association of Moutain Running" with information about
-        organised events.
+        <Link to="/en/send_me_later">SendMeLater</Link> (@send_me_later_bot) -
+        Fast way of creating reminders in a Telegram chat.{' '}
+        <Link to="/en/send_me_later">Read more...</Link>
       </li>
     </ul>
 
@@ -55,18 +56,24 @@ const IndexPage = props => (
       </li>
     </ul>
 
-    <h4>Bots</h4>
+    <h4>Websites</h4>
 
     <ul>
       <li>
-        <ExternalOutboundLink href="https://t.me/ctdwnbot">
-          Countdown
+        <ExternalOutboundLink href="http://biegiempozdrowie.pl">
+          Biegiem Po Zdrowie (pl)
         </ExternalOutboundLink>{' '}
-        (@ctdwnbot) - Telegram bot counting time to selected events.
+        - "Running For Health" project website. Allows user to find a running
+        event in their city. Created in cooperation with{' '}
+        <a href="http://flatpixels.pl">flatpixels</a>.
       </li>
+
       <li>
-        <Link to="/en/send_me_later">SendMeLater</Link> (@send_me_later_bot) -
-        Fast way of creating reminders in Telegram chat.
+        <ExternalOutboundLink href="http://gorskiebieganie.pl">
+          Stowarzyszenie Biegów Górskich (pl)
+        </ExternalOutboundLink>{' '}
+        - Website of "Association of Moutain Running" with information about
+        organised events.
       </li>
     </ul>
 

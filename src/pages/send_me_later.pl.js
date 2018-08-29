@@ -1,5 +1,6 @@
 import React from 'react'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import Helmet from 'react-helmet'
 
 import Header from '../components/header'
 import ExternalOutboundLink, {
@@ -13,7 +14,7 @@ import './framework.scss'
 
 export default props => (
   <div>
-    <Header lang="en" location={props.location} />
+    <Header lang="pl" location={props.location} />
 
     <div className="mt30 flex-ns">
       <SendMeLaterIcon className="mh20" />

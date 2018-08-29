@@ -3,18 +3,22 @@ import Link from 'gatsby-link'
 import LanguageSwitcher from './languageSwitcher'
 import PropTypes from 'prop-types'
 
-const Header = ({ lang, home, location }) => (
-  <div>
-    {!home && (
-      <span>
-        <Link to={`/${lang}/`}>⟵ Home</Link>
-        <div style={{ display: 'inline-block', margin: '0 8px' }}>&bull;</div>
-      </span>
-    )}
+const Header = ({ lang, home, location }) => {
+  const homeText = lang == 'pl' ? 'Strona Główna' : 'Home'
 
-    <LanguageSwitcher location={location} />
-  </div>
-)
+  return (
+    <div>
+      {!home && (
+        <span>
+          <Link to={`/${lang}/`}>⟵ {homeText}</Link>
+          <div style={{ display: 'inline-block', margin: '0 8px' }}>&bull;</div>
+        </span>
+      )}
+
+      <LanguageSwitcher location={location} />
+    </div>
+  )
+}
 
 Header.propTypes = {
   location: PropTypes.object.isRequired,

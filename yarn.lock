@@ -6759,6 +6759,13 @@ ptz-i18n@^0.3.0:
     folktale "^2.0.1"
     ramda "^0.24.1"
 
+ptz-i18n@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.npmjs.org/ptz-i18n/-/ptz-i18n-0.4.0.tgz#eaa667a9b235eff39b2ef122f02276dd08a0b525"
+  dependencies:
+    folktale "^2.0.1"
+    ramda "^0.24.1"
+
 public-encrypt@^4.0.0:
   version "4.0.2"
   resolved "https://registry.npmjs.org/public-encrypt/-/public-encrypt-4.0.2.tgz#46eb9107206bf73489f8b85b69d91334c6610994"

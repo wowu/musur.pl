@@ -1,12 +1,18 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import Helmet from 'react-helmet'
 
 import Header from '../components/header'
 import ExternalOutboundLink from '../components/ExternalOutboundLink'
 
 const IndexPage = props => (
   <div>
+    <Helmet>
+      <link rel="alternate" hreflang="en" href="/en" />
+      <link rel="alternate" hreflang="pl" href="/pl" />
+    </Helmet>
+
     <Header home={true} lang="pl" location={props.location} />
 
     <h1>Karol Musur</h1>
@@ -64,11 +70,9 @@ const IndexPage = props => (
         wybranych dat.
       </li>
       <li>
-        <ExternalOutboundLink href="https://t.me/send_me_later_bot">
-          SendMeLater
-        </ExternalOutboundLink>{' '}
-        (@send_me_later_bot) - Szybki sposób na tworzenie przypomnień używając
-        Telegrama.
+        <Link to="/pl/send_me_later">SendMeLater</Link> (@send_me_later_bot) -
+        Szybki sposób na tworzenie przypomnień używając Telegrama.{' '}
+        <Link to="/pl/send_me_later">Zobacz więcej...</Link>
       </li>
     </ul>
 
