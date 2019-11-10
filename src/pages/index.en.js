@@ -21,6 +21,17 @@ const IndexPage = props => (
 
     <h2>Projects</h2>
 
+    <h4>Apps</h4>
+
+    <ul>
+      <li>
+        <ExternalOutboundLink href="https://1440app.com">
+          1440
+        </ExternalOutboundLink>{' '}
+        - A macOS menu bar app showing minutes left until midnight. Created in cooperation with <a href="https://flatpixels.pl">flatpixels</a>.
+      </li>
+    </ul>
+
     <h4>Telegram Bots</h4>
 
     <ul>
@@ -45,7 +56,7 @@ const IndexPage = props => (
           Seattle
         </ExternalOutboundLink>{' '}
         - Simple WordPress theme crafted with bloggers in mind. Created in
-        cooperation with <a href="http//flatpixels.pl">flatpixels</a>.
+        cooperation with <a href="https://flatpixels.pl">flatpixels</a>.
       </li>
 
       <li>
@@ -65,7 +76,7 @@ const IndexPage = props => (
         </ExternalOutboundLink>{' '}
         - "Running For Health" project website. Allows user to find a running
         event in their city. Created in cooperation with{' '}
-        <a href="http://flatpixels.pl">flatpixels</a>.
+        <a href="https://flatpixels.pl">flatpixels</a>.
       </li>
 
       <li>

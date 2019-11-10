@@ -20,6 +20,17 @@ const IndexPage = props => (
 
     <h2>Projekty</h2>
 
+    <h4>Aplikacje</h4>
+
+    <ul>
+      <li>
+        <ExternalOutboundLink href="https://1440app.com">
+          1440
+        </ExternalOutboundLink>{' '}
+        - Aplikacja na system macOS pokazująca minuty pozostałe danego dnia. Powstała przy współpracy z <a href="https://flatpixels.pl">flatpixels</a>.
+      </li>
+    </ul>
+
     <h4>Strony internetowe</h4>
 
     <ul>
