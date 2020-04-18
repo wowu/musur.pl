@@ -14,7 +14,7 @@ import './framework.scss'
 
 export default props => (
   <div>
-    <Header lang="pl" location={props.location} />
+    <Header location={props.location} />
 
     <div className="mt30 flex-ns">
       <SendMeLaterIcon className="mh20" />
@@ -22,7 +22,7 @@ export default props => (
       <div className="info-box__wrapper">
         <h1 className="m0 mt30">Send Me Later</h1>
         <h2 className="m0 mt10">Telegram Bot</h2>
-        <p className="mt10">"Don't forget about anything anymore".</p>
+        <p className="mt10">Don't forget about anything anymore.</p>
       </div>
     </div>
 
@@ -33,28 +33,28 @@ export default props => (
       </OutboundLink>
     </div>
 
-    <h4 className="mt40">Przykłady użycia bota ✨</h4>
+    <h4 className="mt40">Cool use cases ✨</h4>
 
     <ol>
       <li>
-        Znajomy wysyła Ci wiadomość, o której nie chcesz zapomnieć. Przekaż
-        wiadomość do bota i ustaw odpowiednie przypomnienie.
+        A friend sends you something you don't want to forget about. Forward
+        his/her message to the bot and set the right reminder time.
       </li>
 
       <li>
-        Użyj menu udostępniania na swoim telefonie by udostępnić botowi link,
-        który chcesz sprawdzić później.
+        You see a tweet or a webage you want to check later. Use sharing menu on
+        your mobile device and share the link to the bot.
       </li>
 
       <li>
-        Proste, codzienne przypomnienia typu "kupić mleko" lub "wymienić żarówkę
-        w pokoju".
+        Simple reminders. Just type <i>"buy the milk"</i>, and you won't forget
+        to do it 😎
       </li>
     </ol>
 
     <ExternalOutboundLink icon={false} href="https://t.me/send_me_later_bot">
       <div className="mt50">
-        Dodaj na Telegramie <ExternalIcon />
+        Add on Telegram <ExternalIcon />
       </div>
     </ExternalOutboundLink>
   </div>

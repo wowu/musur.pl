@@ -44,13 +44,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-i18n',
-      options: {
-        langKeyDefault: 'en',
-        useLangKeyLayout: true,
-      },
-    },
-    {
       resolve: '@jacobmischka/gatsby-plugin-react-svg',
       options: {
         rule: {

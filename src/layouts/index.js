@@ -14,7 +14,7 @@ const Layout = ({ children, data, location, lang }) => (
         {
           name: 'keywords',
           content: 'websites, telegram, bots, apps, Karol Musur',
-        },
+        }
       ]}
     />
     <div
