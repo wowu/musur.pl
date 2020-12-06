@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Karol Musur - Strony internetowe, boty i aplikacje.',
+    title: 'Karol Musur - Web development, bots and apps.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

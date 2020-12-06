@@ -23,6 +23,7 @@
     "react-intl": "^2.4.0",
     "react-typography": "^0.16.13",
     "typography": "^0.16.17",
+    "typography-theme-fairy-gates": "^0.16.19",
     "typography-theme-funston": "^0.15.10",
     "typography-theme-grand-view": "^0.15.10"
   },
@@ -38,7 +39,8 @@
     "deploy": "yarn build && tar czvf build.tar.gz public/ && scp build.tar.gz polonium:/srv/musur.pl/ && ssh polonium 'cd /srv/musur.pl/; pwd; rm -rf public && tar xzf build.tar.gz && tree public'"
   },
   "devDependencies": {
-    "prettier": "^1.13.7"
+    "prettier": "^1.13.7",
+    "pretty-quick": "^2.0.1"
   },
   "repository": {
     "type": "git",
