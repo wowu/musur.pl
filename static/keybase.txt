@@ -1,0 +1,81 @@
+==================================================================
+https://keybase.io/pankarol
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://musur.pl
+  * I am pankarol (https://keybase.io/pankarol) on keybase.
+  * I have a public key with fingerprint 30FA BF73 6E87 FED0 2498  3E9F 93B5 7077 45BE BC5B
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01015eca66d5077b74f45053c4e4d5e181e9dd17786bea6bc291daecd297eec7a80d0a",
+      "fingerprint": "30fabf736e87fed024983e9f93b5707745bebc5b",
+      "host": "keybase.io",
+      "key_id": "93b5707745bebc5b",
+      "kid": "01015eca66d5077b74f45053c4e4d5e181e9dd17786bea6bc291daecd297eec7a80d0a",
+      "uid": "e13f70eb89e400c26b67619730ae3819",
+      "username": "pankarol"
+    },
+    "merkle_root": {
+      "ctime": 1519510720,
+      "hash_meta": "fd293dba940b5907973d106a8c769d62199f015333389b9e6a4ef5931f3ef03a",
+      "seqno": 2148130
+    },
+    "revoke": {
+      "sig_ids": [
+        "b68585bb8bb938e132134f479623822f6bd678b5a93b4b1a2db85d8fe4d518040f"
+      ]
+    },
+    "service": {
+      "hostname": "musur.pl",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1519510728,
+  "expire_in": 157680000,
+  "prev": "84bf9f8ce6c8aef075ff9b92a5815ef30db1df8934dca7c42b7c5b323dadbb87",
+  "seqno": 17,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMK7AnicrZNfaB1FFMaT2uQmgUiRSmt9qUsJ0sY4s7OzM3OLtKix/klRA7XVRq8z
+O2eS5SZ3b3b3Jk1LsOZBkgeREGuLUOybSRErVixaQckfLMS8XKuBPtQgShHEalpK
+2qp1NlQE8dF5WXb5zvm+89szs8131DTV6ktLufmFrmrt/HRcqXlh/IdzhxwV6SEn
+f8gpwuoDejUkaaEYaifvIIwwhUD6vqaIMcU841FESeCBpylgjkFojRnjvgLpq8AV
+WEsItCsYQMAkRxpJp9UxYakb4nIcllLbliAjlWHEB84MaOR6ghMQRhBFmfXxqAIV
+UGULe6Ikq7DhlEygLYzsN/tSWI33H/r/OXdltR1gYhgCxQV4CAWur3zmY8EIkkA4
+Fpkwgbgk+8Cqy7JUlHHU6wy3On0QF3uhEEdRmsEN0jCTYIoFxYi5yA4ok55CH6TS
+VhrrT7SSwkOKCsSsg8bIlzxgvtC+i4UwdjBiDxdKgC89MFQQbAgYRLLACfSXIifv
+Yo9jgmyCGAaiImTmSdhtsSVOfr+jfE45VYorJQi347mYWERM+C7hrmt8pX3GFZWW
+sKewdLXiVHOT0cMcecg4Lw5nZvFAGKw2z/7T7fn7Kkklbiv32jTlOEqjwKLIOz1p
+Wk7yGZN0qJzJBkEVbjcoqLCk7YbYigGIkzAqWUZW+W9cvNWBA+UwhkKYKSjzObIn
+84EB25J7ygjDA/ADLi0RRo2xnFxJuV0HQ5BWWBsuiKcDyQLPVcxuDXGJltrCYP/w
+w8zmlN22p6VWkmklBmd4+ouutTW1TTX1dWuyq1PT1Lju7wt17Hru1jPbu26c/XC0
+fmTD+pNvGHFn9zsLE689f+XdJ0dnbjVvOn5m+fdFdeTXqam7n/5q8My1HY3Vwc7d
+5w9U5gFt9eZO7zx8YfHRw5+9srxUP7qtsXFq3+MznT/391dnhx7alXvg+MGrLZ//
+OdnyXmeuQ/REgv5ybNtYR8O5ysr2px5c89vIp0dXvn/k4AStVofDsT/mn5g7emLd
+np/8anFl97Wv7xq50cnPPrfU3HNvejGe/uj1hSuXd8ydaD9yc1LW7bxn/8ypXXsv
+dW7suPDlY3P7vl2b+/jifW9e3SB+DMff/2Zh47Ptmx5+6dXxsU8mFtfvnXz5/pbv
+zl9+q302vrn57VPxcsOWhi1b265v/qCu7i8XhoZ+
+=XBuP
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/pankarol
+
+==================================================================
