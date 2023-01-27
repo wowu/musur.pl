@@ -1,0 +1,31 @@
+/* body {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.125rem;
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: -0.1rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  letter-spacing: -0.08rem;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 1.28rem;
+  letter-spacing: -0.064rem;
+  line-height: 1;
+} */
+
+a, a:visited {
+  color: #3B82F6;
+}
+
+a:hover {
+  color: #234d90;
+  border-bottom: 2px solid #1c3d73;
+}
