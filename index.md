@@ -23,6 +23,7 @@ I create web apps, Telegram bots, Mac apps and more.
 
 ##### CLI Tools
 
+- [docker-rollout](https://github.com/Wowu/docker-rollout) -- Zero Downtime Deployment for Docker Compose.
 - [pro](https://github.com/wowu/pro) -- Open current PR in browser with a single command.
 
 ##### Telegram Bots
