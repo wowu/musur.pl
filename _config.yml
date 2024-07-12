@@ -7,8 +7,8 @@
 title: Karol Musur
 lang: en
 description: >-
-  I create web apps, Telegram bots, Mac apps and more.
-logo: /assets/logo.png
+  I make cool stuff.
+logo: /assets/images/cube.png
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://musur.pl" # the base hostname & protocol for your site, e.g. http://example.com
 # Twitter card
@@ -18,6 +18,7 @@ twitter:
 # theme: minima
 plugins:
   - jekyll-seo-tag
+  - jekyll-postcss
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -39,3 +40,6 @@ exclude:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+postcss:
+  cache: false

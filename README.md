@@ -6,5 +6,6 @@ Generate favicon at https://realfavicongenerator.net/.
 
 ```bash
 bundle install
-jekyll serve
+yarn install
+bundle exec jekyll serve --livereload
 ```

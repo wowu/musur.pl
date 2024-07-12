@@ -1,0 +1,17 @@
+---
+---
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@600;700&display=fallback");
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+@import "./theme.tailwind.css";
+
+@import "tailwindcss/utilities";
+
+@layer components {
+  .social-icon {
+    @apply w-8 h-8 rounded-full flex items-center justify-center bg-white border border-gray-200 shadow-sm text-gray-600 hover:text-gray-800 transition-colors;
+  }
+}

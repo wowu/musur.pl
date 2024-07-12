@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: "en" }}">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 {% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/sakura-earthly.css?v=" | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/main.tailwind.css?v=" | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
-    {{ content }}
+    <body class="font-inter antialiased bg-gray-50 text-gray-800 tracking-tight">
+      <div class="overflow-hidden supports-[overflow:clip]:overflow-clip">
+          <div class="max-w-[728px] mx-auto">
+              <div class="w-full bg-white border-x border-gray-100 box-content">
+                  <div class="px-3 md:px-16">
+                      <div class="flex flex-col min-h-screen">
+                        {{ content }}
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
   </body>
 </html>

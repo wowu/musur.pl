@@ -1,0 +1,92 @@
+---
+layout: default
+---
+
+<!-- Header -->
+<header class="text-center pt-6">
+  <!-- Intro -->
+  <div class="">
+    <img
+      class="inline-flex rounded-full shadow-lg mb-4"
+      src="./assets/images/cube.png"
+      width="48"
+      height="48"
+    />
+    <div class="mb-5">
+      <h1
+        class="font-inter-tight font-bold text-gray-800 dark:text-gray-100 text-2xl mb-1"
+      >
+        Karol Musur
+      </h1>
+      <p class="text-sm text-gray-600 dark:text-gray-400">I make cool stuff.</p>
+    </div>
+
+    {% include social.html %}
+  </div>
+</header>
+
+<!-- Content -->
+<main class="grow py-12 space-y-12">
+  <!-- Projects -->
+  <section>
+    <h2 class="font-inter-tight text-lg font-semibold text-gray-800 mb-6">
+      Projects
+    </h2>
+    <div class="grid min-[580px]:grid-cols-2 gap-4">
+      {% for project in site.data.projects %}
+      <article
+        class="relative p-5 rounded-xl bg-gradient-to-tr from-gray-50 to-gray-50/50 hover:from-gray-100 hover:to-gray-50 group"
+      >
+        <div
+          class="absolute top-5 right-7 text-gray-400 group-hover:text-gray-600 group-hover:rotate-45 transition"
+          aria-hidden="true"
+        >
+          <svg
+            class="fill-current opacity-80"
+            xmlns="http://www.w3.org/2000/svg"
+            width="10"
+            height="10"
+          >
+            <path
+              d="M1.018 10 0 8.983l7.572-7.575H1.723L1.736 0H10v8.266H8.577l.013-5.841L1.018 10Z"
+            />
+          </svg>
+        </div>
+        <div
+          class="w-11 h-11 rounded-full flex items-center justify-center bg-white border border-gray-200 shadow-sm mb-4 overflow-hidden"
+        >
+          {% if project.emoji %}
+          <span class="text-2xl">{{ project.emoji }}</span>
+          {% else %}
+          <img
+            src="{{ project.icon }}"
+            alt="{{ project.name }} icon"
+            class="{{ project.icon_class | default: 'size-full' }}"
+          />
+          {% endif %}
+        </div>
+        <div class="space-y-1">
+          <h3 class="font-semibold text-gray-800">
+            <a class="before:absolute before:inset-0" href="{{ project.url }}">
+              {{ project.name }}
+            </a>
+          </h3>
+          <p class="text-sm text-gray-600">{{ project.description }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="space-y-12 text-center pb-16">
+  <div class="space-y-6">
+    {% include social.html %}
+
+    <!-- Copyright notes -->
+    <p class="text-sm text-gray-400 dark:text-gray-600">
+      &copy; Karol Musur. All rights reserved.
+    </p>
+  </div>
+</footer>
