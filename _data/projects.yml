@@ -6,13 +6,13 @@
 - name: MonoFocus
   url: https://monofocus.app
   icon: assets/images/monofocus.png
-  icon_class: size-[80%]
+  icon_class: max-w-[80%]
   description: Focus on one task at a time, always visible in your Mac menu bar.
 
 - name: 1440
   url: https://1440app.com
   icon: assets/images/1440.png
-  icon_class: size-[80%]
+  icon_class: max-w-[80%]
   description: Focus on one task at a time, always visible in your Mac menu bar.
 
 - name: docker-rollout

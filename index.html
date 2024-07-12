@@ -11,6 +11,7 @@ layout: default
       src="./assets/images/cube.png"
       width="48"
       height="48"
+      alt="Karol Musur"
     />
     <div class="mb-5">
       <h1
@@ -61,7 +62,7 @@ layout: default
           <img
             src="{{ project.icon }}"
             alt="{{ project.name }} icon"
-            class="{{ project.icon_class | default: 'size-full' }}"
+            class="{{ project.icon_class | default: 'max-w-full' }}"
           />
           {% endif %}
         </div>
