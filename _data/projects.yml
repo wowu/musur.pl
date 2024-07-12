@@ -1,7 +1,7 @@
 - name: CRESQA
   url: https://cresqa.com
   icon: assets/images/cresqa.png
-  description: We Help Musicians Build an Audience on Social Media with AI
+  description: We help musicians build an audience on social media with AI.
 
 - name: MonoFocus
   url: https://monofocus.app
@@ -9,16 +9,16 @@
   icon_class: max-w-[80%]
   description: Focus on one task at a time, always visible in your Mac menu bar.
 
+- name: docker-rollout
+  url: https://github.com/Wowu/docker-rollout
+  emoji: "🐳"
+  description: Zero downtime deployment for Docker Compose.
+
 - name: 1440
   url: https://1440app.com
   icon: assets/images/1440.png
   icon_class: max-w-[80%]
-  description: Focus on one task at a time, always visible in your Mac menu bar.
-
-- name: docker-rollout
-  url: https://github.com/Wowu/docker-rollout
-  emoji: "🐳"
-  description: Zero Downtime Deployment for Docker Compose.
+  description: Minutes left until the end of the day, right in your menu bar.
 
 - name: pro
   url: https://github.com/wowu/pro
