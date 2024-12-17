@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3.2"
+gem "jekyll"
 gem "jekyll-postcss"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
