@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<!-- Header -->
+<header class="text-center pt-6">
+  <!-- Intro -->
+  <div class="">
+    <img
+      class="inline-flex rounded-full shadow-lg mb-4"
+      src="/assets/images/cube.png"
+      width="48"
+      height="48"
+      alt="Karol Musur"
+    />
+    <div class="mb-5">
+      <h1 class="font-inter-tight font-bold text-gray-800 text-2xl mb-1">
+        Karol Musur
+      </h1>
+      <p class="text-sm text-gray-600">I make cool stuff.</p>
+    </div>
+
+    {% include social.html %}
+  </div>
+</header>
+
+<!-- Content -->
+<main class="grow py-12 prose">
+  <!-- back -->
+
+  <a href="/" class="text-gray-600 text-sm">← Back to home</a><br /><br />
+
+  {% if page.cover %}
+  <img src="{{ page.cover }}" alt="{{ page.title }}" />
+  {% endif %}
+
+  <span class="text-gray-600 text-sm">
+    — {{ page.date | date: "%B %-d, %Y" }}
+  </span>
+
+  <h1>{{ page.title }}</h1>
+
+  {{ content }}
+</main>

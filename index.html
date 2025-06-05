@@ -8,7 +8,7 @@ layout: default
   <div class="">
     <img
       class="inline-flex rounded-full shadow-lg mb-4"
-      src="./assets/images/cube.png"
+      src="/assets/images/cube.png"
       width="48"
       height="48"
       alt="Karol Musur"
@@ -72,6 +72,50 @@ layout: default
           </h3>
           <p class="text-sm text-gray-600">{{ project.description }}</p>
         </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Articles -->
+  <section>
+    <h2 class="font-inter-tight text-lg font-semibold text-gray-800 mb-6">
+      Articles
+    </h2>
+    <div class="space-y-1">
+      {% for post in site.posts %}
+      <!-- Post #1 -->
+      <article
+        class="relative p-5 rounded-xl odd:bg-gradient-to-tr odd:from-gray-100 odd:to-gray-50 group"
+      >
+        <div
+          class="absolute top-5 right-7 text-gray-400 group-hover:text-gray-600 group-hover:rotate-45 transition"
+          aria-hidden="true"
+        >
+          <svg
+            class="fill-current opacity-80"
+            xmlns="http://www.w3.org/2000/svg"
+            width="10"
+            height="10"
+          >
+            <path
+              d="M1.018 10 0 8.983l7.572-7.575H1.723L1.736 0H10v8.266H8.577l.013-5.841L1.018 10Z"
+            ></path>
+          </svg>
+        </div>
+        <div class="space-y-1.5 mb-2">
+          <div class="text-[13px] font-medium text-gray-600">
+            {{ post.date | date: "%B %-d, %Y" }}
+          </div>
+          <h3 class="font-semibold text-gray-800">
+            <a class="before:absolute before:inset-0" href="{{ post.url }}">
+              {{ post.title }}
+            </a>
+          </h3>
+        </div>
+        <p class="text-sm text-gray-600">
+          {{ post.excerpt | strip_html | truncatewords: 20 }}
+        </p>
       </article>
       {% endfor %}
     </div>
