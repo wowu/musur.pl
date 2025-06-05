@@ -34,7 +34,7 @@ layout: default
     <div class="grid min-[580px]:grid-cols-2 gap-4">
       {% for project in site.data.projects %}
       <article
-        class="relative p-5 rounded-xl bg-gradient-to-tr from-gray-50 to-gray-50/50 hover:from-gray-100 hover:to-gray-50 group"
+        class="relative p-5 rounded-xl bg-linear-to-tr from-gray-50 to-gray-50/50 hover:from-gray-100 hover:to-gray-50 group"
       >
         <div
           class="absolute top-5 right-7 text-gray-400 group-hover:text-gray-600 group-hover:rotate-45 transition"
@@ -52,7 +52,7 @@ layout: default
           </svg>
         </div>
         <div
-          class="w-11 h-11 rounded-full flex items-center justify-center bg-white border border-gray-200 shadow-sm mb-4 overflow-hidden"
+          class="w-11 h-11 rounded-full flex items-center justify-center bg-white border border-gray-200 shadow-xs mb-4 overflow-hidden"
         >
           {% if project.emoji %}
           <span class="text-2xl">{{ project.emoji }}</span>
@@ -86,7 +86,7 @@ layout: default
       {% for post in site.posts %}
       <!-- Post #1 -->
       <article
-        class="relative p-5 rounded-xl odd:bg-gradient-to-tr odd:from-gray-100 odd:to-gray-50 group"
+        class="relative p-5 rounded-xl odd:bg-linear-to-tr odd:from-gray-100 odd:to-gray-50 group"
       >
         <div
           class="absolute top-5 right-7 text-gray-400 group-hover:text-gray-600 group-hover:rotate-45 transition"

@@ -1,17 +1,43 @@
 ---
 ---
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@600;700&display=fallback");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@600;700&display=fallback")
+layer(base);
 
-@import "tailwindcss/base";
-@import "tailwindcss/components";
+@import "tailwindcss";
 
-@import "./theme.tailwind.css";
+@import "./theme.tailwind.css" layer(components);
 
-@import "tailwindcss/utilities";
+@plugin '@tailwindcss/forms' {
+  strategy: base;
+}
+@plugin '@tailwindcss/typography';
 
-@layer components {
-  .social-icon {
-    @apply w-8 h-8 rounded-full flex items-center justify-center bg-white border border-gray-200 shadow-sm text-gray-600 hover:text-gray-800 transition-colors;
+/* @custom-variant dark (&:is(.dark *)); */
+
+@theme {
+  --font-inter: Inter, sans-serif;
+  --font-inter-tight: Inter Tight, sans-serif;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
   }
+}
+
+@utility social-icon {
+  @apply w-8 h-8 rounded-full flex items-center justify-center bg-white border border-gray-200 shadow-xs text-gray-600 hover:text-gray-800 transition-colors;
 }
