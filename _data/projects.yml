@@ -1,11 +1,11 @@
 - name: CRESQA
   url: https://cresqa.com
-  icon: assets/images/cresqa.png
+  icon: assets/images/projects/cresqa.png
   description: We help musicians build an audience on social media with AI.
 
 - name: MonoFocus
   url: https://monofocus.app
-  icon: assets/images/monofocus.png
+  icon: assets/images/projects/monofocus.png
   icon_class: max-w-[80%]
   description: Focus on one task at a time, always visible in your Mac menu bar.
 
@@ -16,7 +16,7 @@
 
 - name: 1440
   url: https://1440app.com
-  icon: assets/images/1440.png
+  icon: assets/images/projects/1440.png
   icon_class: max-w-[80%]
   description: Minutes left until the end of the day, right in your menu bar.
 
@@ -27,10 +27,10 @@
 
 - name: Countdown Bot
   url: https://t.me/ctdwnbot
-  icon: assets/images/ctdwn.gif
+  icon: assets/images/projects/ctdwn.gif
   description: Track remaining time to events that matter.
 
 - name: SendMeLater Bot
   url: https://t.me/send_me_later_bot
-  icon: assets/images/sendmelater.png
+  icon: assets/images/projects/sendmelater.png
   description: The fastest way of creating reminders in a Telegram chat.

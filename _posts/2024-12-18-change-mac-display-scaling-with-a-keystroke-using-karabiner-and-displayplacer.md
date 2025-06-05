@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Change Mac Display Scaling With a Keystroke Using Karabiner and displayplacer
+permalink: /change-mac-display-scaling-with-a-keystroke
 date: 2022-04-09 12:00 +0100
 cover: /assets/images/displayplacer/cover.png
 ---
@@ -29,7 +30,9 @@ displayplacer list
 Look for two things: your MacBook screen ID, and display modes you want to use.
 
 <figure>
-<img src="/assets/images/displayplacer/image.png" alt="" />
+<a href="/assets/images/displayplacer/image.png">
+<img src="/assets/images/displayplacer/image.png" alt="displayplacer list" />
+</a>
 <figcaption>Write down <b>persistent screen id</b> and <b>mode ids</b> you want to use.</figcaption>
 </figure>
 
