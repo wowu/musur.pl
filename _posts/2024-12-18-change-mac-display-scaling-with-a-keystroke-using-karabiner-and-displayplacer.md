@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Change Mac Display Scaling With a Keystroke Using Karabiner and displayplacer
+title: Change Mac Display Scaling with a Keyboard Shortcut (Karabiner + displayplacer)
 permalink: /change-mac-display-scaling-with-a-keystroke
 date: 2022-04-09 12:00 +0100
 cover: /assets/images/displayplacer/cover.png
 ---
 
-I’m changing Retina scaling on my MacBook really often. The default scaling is suitable for usual tasks, but sometimes you need more space for things like code review, or the ability to open two windows side by side. Yet opening preferences to find this particular option each time was a bit cumbersome. I knew this task can be automated, it’s just a matter of right tools.
+I change display scaling on my MacBook fairly often. The default scaling is suitable for most tasks, but sometimes I need more space, for example, during code reviews, or when working with two windows side by side. Yet opening preferences to find this particular option each time was a bit tedious. I figured this could be automated, it was just a matter of the right tools.
 
-At first I wanted to change preferences using AppleScript. Turns out it is possible by opening preferences window and automating exact sequence of clicks. It takes too long though, and doesn’t sound like a good solution. There has to be a better way.
+At first, I tried to change preferences using AppleScript. Turns out it _is_ possible by opening preferences window and automating the exact sequence of clicks. It takes too long though, and doesn’t sound like a good solution. There had to be a better way.
 
-Luckily, I found [displayplacer](https://github.com/jakehilborn/displayplacer) — a command line utility for display settings management. It has so many options! I recommend checking them all, it allows you to easily switch between many display configurations, including Retina screen scaling. Let’s use that.
+Luckily, I found [displayplacer](https://github.com/jakehilborn/displayplacer) — a command line utility for managing display settings. It has so many options! I recommend checking them out, it allows easy switching between many display configurations, including Retina scaling modes. Let’s use that.
 
 ## Installing displayplacer
 
-Install displayplacer using Homebrew. If you haven’t got Homebrew, check the [installation guide](https://brew.sh/).
+Install displayplacer via Homebrew. If you haven’t installed Homebrew yet, follow the [installation guide](https://brew.sh/).
 
 ```bash
 brew tap jakehilborn/jakehilborn
@@ -33,7 +33,7 @@ Look for two things: your MacBook screen ID, and display modes you want to use.
 <a href="/assets/images/displayplacer/image.png">
 <img src="/assets/images/displayplacer/image.png" alt="displayplacer list" />
 </a>
-<figcaption>Write down <b>persistent screen id</b> and <b>mode ids</b> you want to use.</figcaption>
+<figcaption>Write down your <b>persistent screen ID</b> and <b>mode IDs</b> you want to use.</figcaption>
 </figure>
 
 By running this command, you should be able to change the display configuration:
@@ -44,17 +44,17 @@ displayplacer "id:YOUR-SCREEN-ID mode:MODE_ID"
 displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 mode:11"
 ```
 
-In my case I wanted to switch between those two values of mode (numbers might be different on your machine):
+In my case I wanted to switch between these two values of mode (numbers might be different on your machine):
 
 - Mode 8: “Default” (looks like 1440 x 900)
 - Mode 11: “More Space” (looks like 1680 x 1050)
 
 <figure>
 <img src="/assets/images/displayplacer/modes.png" alt="" />
-<figcaption>We will be switching between those modes.</figcaption>
+<figcaption>We will be switching between these modes.</figcaption>
 </figure>
 
-So if you want to change your screen scaling to “More Space”, you run `displayplacer "id:YOUR-SCREEN_ID mode:11"`.
+So if you want to change your screen scaling to “More Space”, run `displayplacer "id:YOUR-SCREEN_ID mode:11"`.
 
 ---
 
@@ -108,8 +108,8 @@ Find `"rules": []` section and add our command:
 
 <!-- https://gist.github.com/Wowu/067d8d8b809e181cf1cbe2b87f00865e -->
 
-Remember to change screen ID to yours. This will map <kbd>⌘</kbd>+<kbd>option</kbd>+<kbd>ctrl</kbd>+<kbd>1</kbd> and <kbd>⌘</kbd>+<kbd>options</kbd>+<kbd>ctrl</kbd>+<kbd>2</kbd> to two scaling modes.
+Remember to change screen ID to yours. This will map <kbd>⌘</kbd>+<kbd>Option</kbd>+<kbd>Ctrl</kbd>+<kbd>1</kbd> and <kbd>⌘</kbd>+<kbd>Option</kbd>+<kbd>Ctrl</kbd>+<kbd>2</kbd> to the two scaling modes.
 
 ---
 
-If you want to learn how to use Karabiner Elements, check the [official documentation](https://karabiner-elements.pqrs.org/docs/).
+If you want to learn how to use Karabiner Elements, check out the [official documentation](https://karabiner-elements.pqrs.org/docs/).
