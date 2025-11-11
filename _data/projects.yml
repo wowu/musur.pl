@@ -1,36 +1,43 @@
 - name: CRESQA
+  category: Projects
   url: https://cresqa.com
   icon: assets/images/projects/cresqa.png
   description: We help musicians build an audience on social media with AI.
 
 - name: MonoFocus
+  category: Projects
   url: https://monofocus.app
   icon: assets/images/projects/monofocus.png
   icon_class: max-w-[80%]
   description: Focus on one task at a time, always visible in your Mac menu bar.
 
-- name: docker-rollout
-  url: https://github.com/Wowu/docker-rollout
-  emoji: "🐳"
-  description: Zero downtime deployment for Docker Compose.
-
 - name: 1440
+  category: Projects
   url: https://1440app.com
   icon: assets/images/projects/1440.png
   icon_class: max-w-[80%]
   description: Minutes left until the end of the day, right in your menu bar.
 
+- name: docker-rollout
+  category: Open Source
+  url: https://github.com/Wowu/docker-rollout
+  emoji: "🐳"
+  description: Zero downtime deployment for Docker Compose.
+
 - name: pro
+  category: Open Source
   url: https://github.com/wowu/pro
   emoji: "⚡️"
   description: Open current PR in browser with a single command.
 
 - name: Countdown Bot
+  category: Telegram Bots
   url: https://t.me/ctdwnbot
   icon: assets/images/projects/ctdwn.gif
   description: Track remaining time to events that matter.
 
 - name: SendMeLater Bot
+  category: Telegram Bots
   url: https://t.me/send_me_later_bot
   icon: assets/images/projects/sendmelater.png
   description: The fastest way of creating reminders in a Telegram chat.

@@ -24,15 +24,18 @@ layout: default
   </div>
 </header>
 
+{% assign grouped_projects = site.data.projects | group_by: "category" -%}
+
 <!-- Content -->
 <main class="grow py-12 space-y-12">
+  {% for category in grouped_projects %}
   <!-- Projects -->
   <section>
     <h2 class="font-inter-tight text-lg font-semibold text-gray-800 mb-6">
-      Projects
+      {{ category.name }}
     </h2>
     <div class="grid min-[580px]:grid-cols-2 gap-4">
-      {% for project in site.data.projects %}
+      {% for project in category.items %}
       <article
         class="relative p-5 rounded-xl bg-linear-to-tr from-gray-50 to-gray-50/50 hover:from-gray-100 hover:to-gray-50 group"
       >
@@ -76,6 +79,7 @@ layout: default
       {% endfor %}
     </div>
   </section>
+  {% endfor %}
 
   <!-- Articles -->
   <section>
