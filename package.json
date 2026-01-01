@@ -3,7 +3,7 @@
     "start": "bundle exec jekyll serve --livereload"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/forms": "^0.5.11",
     "@tailwindcss/postcss": "^4.1.8",
     "@tailwindcss/typography": "^0.5.15",
     "postcss": "^8.5.4",
