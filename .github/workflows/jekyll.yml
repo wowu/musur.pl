@@ -33,7 +33,7 @@ jobs:
           ruby-version: 3.4.4
           bundler-cache: true
       - run: npm install
-      - uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v6
       - name: Build Jekyll site
         run: JEKYLL_ENV=production bundle exec jekyll build
       - name: Upload artifact
